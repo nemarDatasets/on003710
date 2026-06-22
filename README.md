@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.on003710-blue)](https://doi.org/10.82901/nemar.on003710)
+
 The APPLESEED Example Dataset
 
 This dataset consists of longitudinal EEG recordings from 13 infants at 4, 8, and 12 months of age. Test-retest reliability was assessed at 4 months of age via two appointments (session 1 & 2) that occurred within 1 week of each other. Session 3 data was recorded at 8 months of age and session 4 data was recorded at 12 months of age. Two participants did not return for longitudinal testing at sessions 3 & 4. Therefore, the complete dataset consists of 48 recording sessions, with reliability and longitudinal data (sessions 1-4) for 11 infants (6 F), and reliability data only (sessions 1 & 2) for an additional 2 infants. A channel location file and bin file for analysis are included in the "code" directory.
