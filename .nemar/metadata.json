@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "APPLESEED Example Dataset",
+  "description": "A longitudinal pediatric EEG dataset comprising 48 recording sessions from 13 infants assessed at 4, 8, and 12 months of age, with test-retest reliability measurements. This dataset was used to develop and validate APPLESEED (Automated Preprocessing Pipe-Line for the Estimation of Scale-wise Entropy from EEG Data), a preprocessing pipeline designed for pediatric neuroimaging applications.",
+  "methods_description": "Longitudinal EEG recordings were collected from infants at multiple timepoints: sessions 1 and 2 at 4 months of age (within 1 week for test-retest reliability assessment), session 3 at 8 months of age, and session 4 at 12 months of age. Complete longitudinal data (sessions 1-4) were obtained from 11 infants (6 female), while 2 additional infants contributed reliability data only (sessions 1-2). Channel location files and bin files for analysis are provided.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,33 @@
       "orcid": "0000-0001-5450-0631"
     }
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003710.v1.0.2",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "infant development"
+    },
+    {
+      "term": "longitudinal study"
+    },
+    {
+      "term": "signal entropy"
+    },
+    {
+      "term": "preprocessing pipeline"
+    },
+    {
+      "term": "test-retest reliability"
+    },
+    {
+      "term": "pediatric neuroimaging"
+    },
+    {
+      "term": "APPLESEED"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003710",
       "identifier_type": "URL",
@@ -40,15 +63,20 @@
       "identifier": "10.1016/j.dcn.2022.101163",
       "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003710.v1.0.2",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "10.9 GB (147 files)"
   ],
   "formats": [
     ".ced",
@@ -59,41 +87,8 @@
     ".tsv",
     ".txt",
     ".vhdr",
-    ".vmrk"
+    ".vmrk",
+    ".yml"
   ],
-  "description": "This longitudinal EEG dataset comprises 48 recording sessions from 13 infants assessed at 4, 8, and 12 months of age, with test-retest reliability measurements at 4 months. The dataset was developed to validate APPLESEED, an automated preprocessing pipeline for estimating scale-wise entropy from pediatric EEG data, and serves as a reference resource for developmental cognitive neuroscience research. This dataset is part of a larger longitudinal study initially described in Puglia et al. (2020). The published version of the APPLESEED validation study is available in Developmental Cognitive Neuroscience (Puglia et al., 2022).",
-  "methods_description": "Longitudinal EEG recordings were collected from infants at three developmental timepoints (4, 8, and 12 months of age). Test-retest reliability was assessed via two appointments within one week at the 4-month timepoint. Complete longitudinal data (sessions 1-4) were obtained from 11 infants (6 female), while 2 additional infants contributed reliability data only (sessions 1-2).",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "infant development"
-    },
-    {
-      "term": "entropy analysis"
-    },
-    {
-      "term": "longitudinal study"
-    },
-    {
-      "term": "signal processing"
-    },
-    {
-      "term": "pediatric neuroimaging"
-    },
-    {
-      "term": "test-retest reliability"
-    },
-    {
-      "term": "APPLESEED"
-    },
-    {
-      "term": "developmental neuroscience"
-    },
-    {
-      "term": "scale-wise entropy"
-    }
-  ],
-  "source_hash": "1a760aa10436bde0b457004376c0dcc20994e173635cc8997927c809dc0c415a"
+  "source_hash": "48b6f252e80b5e9e557094876370833a7b791747f72c42d81c71f166ce561769"
 }
