@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "validated",
+  "pipeline_stage": "enriched",
   "title": "APPLESEED Example Dataset",
-  "description": "A longitudinal pediatric EEG dataset comprising 48 recording sessions from 13 infants assessed at 4, 8, and 12 months of age, with test-retest reliability measurements. This dataset was used to develop and validate APPLESEED (Automated Preprocessing Pipe-Line for the Estimation of Scale-wise Entropy from EEG Data), a preprocessing pipeline designed for pediatric neuroimaging applications.",
-  "methods_description": "Longitudinal EEG recordings were collected from infants at multiple timepoints: sessions 1 and 2 at 4 months of age (within 1 week for test-retest reliability assessment), session 3 at 8 months of age, and session 4 at 12 months of age. Complete longitudinal data (sessions 1-4) were obtained from 11 infants (6 female), while 2 additional infants contributed reliability data only (sessions 1-2). Channel location files and bin files for analysis are provided.",
+  "description": "Longitudinal EEG recordings from 13 infants collected at 4, 8, and 12 months of age, with test-retest reliability assessed through two sessions within one week at 4 months. The complete dataset comprises 48 recording sessions, including 11 infants with all four sessions and 2 infants with reliability sessions only. It was used to develop and validate the APPLESEED automated preprocessing pipeline for estimating scale-wise entropy from pediatric EEG, and is provided as an example dataset.",
+  "methods_description": "EEG was recorded from infants at 4 months (two sessions within one week to assess test-retest reliability), 8 months, and 12 months of age. A channel location file and bin file for analysis are included in the code directory.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -17,7 +17,7 @@
       "term": "EEG"
     },
     {
-      "term": "infant development"
+      "term": "infant"
     },
     {
       "term": "longitudinal study"
@@ -30,22 +30,11 @@
     },
     {
       "term": "test-retest reliability"
-    },
-    {
-      "term": "pediatric neuroimaging"
-    },
-    {
-      "term": "APPLESEED"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003710",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003710",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
     },
@@ -60,14 +49,14 @@
       "relation_type": "IsPartOf"
     },
     {
-      "identifier": "10.1016/j.dcn.2022.101163",
-      "identifier_type": "DOI",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003710.v1.0.2",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003710",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -76,7 +65,7 @@
     "eeg"
   ],
   "sizes": [
-    "10.9 GB (147 files)"
+    "10.18 GB (147 files)"
   ],
   "formats": [
     ".ced",
